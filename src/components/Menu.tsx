@@ -143,7 +143,7 @@ export default function Menu() {
   ];
 
   const tradisi = [
-    { name: "Nasi Lemak Daun Pisang", details: "Nasi lemak tradisi bungkus daun pisang, Telur Suku, Ikan Bilis, Timun", price: "RM 2.00", img: "nasilemak-1.png" },
+    { name: "Nasi Lemak Daun Pisang", details: "Nasi lemak tradisi bungkus daun pisang, Telur Suku, Ikan Bilis, Timun", price: "RM 2.00", img: "nasilemak-.jpg" },
     { name: "Pulut Kuning Rendang", details: "Set sajian istimewa bersempena majlis keraian atau perayaan. Pulut Kuning yang berlemak santan dan lembut dipadankan sempurna dengan Rendang Daging yang kaya aroma rempah ratus tradisional.", price: "RM 10.00", img: "Pulutkuning.png" },
     { name: "Karipap Sardin", details: "Karipap berasaskan kulit yang rangup dan berlapis, diisi penuh dengan inti sardin yang enak, sedikit pedas, dan kaya dengan rasa rempah-ratus tradisional. 1 box ada 50 pcs.", price: "RM 40.00", img: "Karipapsardin.png" },
     { name: "Tauhu Bergedil", details: "Tauhu pok yang diisi padat dengan kentang lecek rempah, daun sup, dan bawang goreng, lalu dicelup telur dan digoreng garing. 1 box 25 pcs (Pilihan : Kentang / Ayam / Daging )", price: "RM 30.00 / RM 35.00 / RM 40.00 ", img: "Tauhubergedil.png" },
