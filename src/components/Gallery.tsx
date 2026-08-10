@@ -11,7 +11,6 @@ export default function Gallery() {
     "Collection7.jpg",
     "Collection8.jpg",
     "Collection9.jpg",
-    "C10.jpg",
     "C11.jpg",
     
   ];
