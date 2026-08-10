@@ -1,0 +1,6 @@
+{
+  "name": "PaiNai Delights",
+  "description": "A premium cake shop and bakery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
