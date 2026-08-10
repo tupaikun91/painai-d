@@ -94,14 +94,49 @@ const MenuSlider = ({ items, reverse = false }: { items: any[], reverse?: boolea
     scrollRef.current.scrollLeft = newScrollLeft;
   };
 
+  const onTouchStart = (e: React.TouchEvent) => {
+    isDragging.current = true;
+    if (scrollRef.current) {
+      startX.current = e.touches[0].pageX - scrollRef.current.offsetLeft;
+      scrollLeft.current = scrollRef.current.scrollLeft;
+    }
+  };
+
+  const onTouchEnd = () => {
+    isDragging.current = false;
+  };
+
+  const onTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging.current || !scrollRef.current) return;
+    const x = e.touches[0].pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+    
+    let newScrollLeft = scrollLeft.current - walk;
+    
+    if (newScrollLeft >= scrollRef.current.scrollWidth / 2) {
+      newScrollLeft -= scrollRef.current.scrollWidth / 2;
+      startX.current = e.touches[0].pageX - scrollRef.current.offsetLeft;
+      scrollLeft.current = newScrollLeft;
+    } else if (newScrollLeft <= 0) {
+      newScrollLeft += scrollRef.current.scrollWidth / 2;
+      startX.current = e.touches[0].pageX - scrollRef.current.offsetLeft;
+      scrollLeft.current = newScrollLeft;
+    }
+    
+    scrollRef.current.scrollLeft = newScrollLeft;
+  };
+
   return (
     <div 
       ref={scrollRef}
-      className="flex gap-10 px-6 overflow-x-hidden cursor-grab select-none hide-scrollbar py-10"
+      className="flex gap-10 px-6 overflow-x-hidden cursor-grab select-none hide-scrollbar py-10 touch-pan-y"
       onMouseDown={onMouseDown}
       onMouseLeave={onMouseLeave}
       onMouseUp={onMouseUp}
       onMouseMove={onMouseMove}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+      onTouchMove={onTouchMove}
       style={{ WebkitOverflowScrolling: 'touch' }}
     >
       {extendedMenuItems.map((item, index) => (
