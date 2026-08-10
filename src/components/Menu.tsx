@@ -130,20 +130,20 @@ const MenuSlider = ({ items, reverse = false }: { items: any[], reverse?: boolea
 
 export default function Menu() {
   const desserts = [
-    { name: "Burnt Cheesecake", details: "Baked cheesecake with a smooth, rich texture and a delicious cheesy flavor. Simple yet satisfying. Size : 7 inci", price: "RM 50.00", img: "/Burnt1.png" },
-    { name: "Signature Chocolate Ganache Kek Batik", details: "Kek batik lembut dengan kepekatan rasa coklat yang kaya. Dilitupi lapisan chocolate ganache licin yang tidak terlalu manis. Anggaran size dalam 8 inci.", price: "RM 40.00", img: "/Kekbatik1.jpg" },
-    { name: "Kek Marble Jelita", details: "Kek span klasik yang lembut, gebu dengan corak 'Jelita' yang menawan. Menggunakan bahan yang berkualiti untuk rasa yang kaya dan moist dalam setiap gigitan.", price: "RM 35.00", img: "/MarbleJelita.png" },
+    { name: "Burnt Cheesecake", details: "Baked cheesecake with a smooth, rich texture and a delicious cheesy flavor. Simple yet satisfying. Size : 7 inci", price: "RM 50.00", img: "Burnt1.png" },
+    { name: "Signature Chocolate Ganache Kek Batik", details: "Kek batik lembut dengan kepekatan rasa coklat yang kaya. Dilitupi lapisan chocolate ganache licin yang tidak terlalu manis. Anggaran size dalam 8 inci.", price: "RM 40.00", img: "Kekbatik1.jpg" },
+    { name: "Kek Marble Jelita", details: "Kek span klasik yang lembut, gebu dengan corak 'Jelita' yang menawan. Menggunakan bahan yang berkualiti untuk rasa yang kaya dan moist dalam setiap gigitan.", price: "RM 35.00", img: "MarbleJelita.png" },
     { name: "Kek Pisang", details: "Kek pisang yang lembut dan moist dengan kemanisan semula jadi pisang. Pilihan klasik yang sesuai untuk minum petang. Anggaran size 8 inci", price: "RM 35.00", img: "Kekpisang.png" },
-    { name: "Victoria Sandwich Cake", details: "Kek span yang lembut dilapisi krim segar dan jem strawberi, dihiasi buah strawberi segar di atasnya. Anggaran size Loaf", price: "RM 25.00", img: "/Victoria.png" },
-    { name: "Bread Pudding with Custard Sauce", details: "Baked bread pudding with a golden crust and soft interior, served with rich and creamy custard sauce. 7 inch", price: "RM 25.00", img: "/breadpudding.png" },
+    { name: "Victoria Sandwich Cake", details: "Kek span yang lembut dilapisi krim segar dan jem strawberi, dihiasi buah strawberi segar di atasnya. Anggaran size Loaf", price: "RM 25.00", img: "Victoria.png" },
+    { name: "Bread Pudding with Custard Sauce", details: "Baked bread pudding with a golden crust and soft interior, served with rich and creamy custard sauce. 7 inch", price: "RM 25.00", img: "breadpudding.png" },
     { name: "Fudgy Brownies", details: "Brownies coklat jenis fudgy yang padat dan kaya rasa coklat, dilimpahi drizzle coklat di atasnya. Size : 7 inci", price: "RM 40.00", img: "Brownies.png" },
-    { name: "Cheesekut Kek Batik Layer", details: "Kombinasi unik lapisan kek batik lembut di bawah dan cheesekut creamy di atas, dilitupi melimpah dengan parutan keju segar. Size 6 inci", price: "RM 60.00", img: "/Cheesekut.png" },
-    { name: "Mini Choc Cake Moist", details: "Super moist mini chocolate cakes packed with rich, premium chocolate flavor and topped with a smooth chocolate ganache drizzle. Perfectly portioned in a 20-piece pack, ideal for sharing.", price: "RM 25.00", img: "/Minichoc.png" },
-    { name: "Double Choc Chip Muffin", details: "Indulge in our rich, Double Choc Chip Muffins. These moist, decadent chocolate muffins are loaded with premium chocolate chips both inside and on top for the ultimate chocolate experience. Perfect as a quick treat or to share with family. 16 pcs", price: "RM 25.00", img: "/MuffinChoc.png" },
+    { name: "Cheesekut Kek Batik Layer", details: "Kombinasi unik lapisan kek batik lembut di bawah dan cheesekut creamy di atas, dilitupi melimpah dengan parutan keju segar. Size 6 inci", price: "RM 60.00", img: "Cheesekut.png" },
+    { name: "Mini Choc Cake Moist", details: "Super moist mini chocolate cakes packed with rich, premium chocolate flavor and topped with a smooth chocolate ganache drizzle. Perfectly portioned in a 20-piece pack, ideal for sharing.", price: "RM 25.00", img: "Minichoc.png" },
+    { name: "Double Choc Chip Muffin", details: "Indulge in our rich, Double Choc Chip Muffins. These moist, decadent chocolate muffins are loaded with premium chocolate chips both inside and on top for the ultimate chocolate experience. Perfect as a quick treat or to share with family. 16 pcs", price: "RM 25.00", img: "MuffinChoc.png" },
   ];
 
   const tradisi = [
-    { name: "Nasi Lemak Daun Pisang", details: "Nasi lemak tradisi bungkus daun pisang, Telur Suku, Ikan Bilis, Timun", price: "RM 2.00", img: "/Nasilemak2.png" },
+    { name: "Nasi Lemak Daun Pisang", details: "Nasi lemak tradisi bungkus daun pisang, Telur Suku, Ikan Bilis, Timun", price: "RM 2.00", img: "Nasilemak2.png" },
     { name: "Pulut Kuning Rendang", details: "Set sajian istimewa bersempena majlis keraian atau perayaan. Pulut Kuning yang berlemak santan dan lembut dipadankan sempurna dengan Rendang Daging yang kaya aroma rempah ratus tradisional.", price: "RM 10.00", img: "Pulutkuning.png" },
     { name: "Karipap Sardin", details: "Karipap berasaskan kulit yang rangup dan berlapis, diisi penuh dengan inti sardin yang enak, sedikit pedas, dan kaya dengan rasa rempah-ratus tradisional. 1 box ada 50 pcs.", price: "RM 40.00", img: "Karipapsardin.png" },
     { name: "Tauhu Bergedil", details: "Tauhu pok yang diisi padat dengan kentang lecek rempah, daun sup, dan bawang goreng, lalu dicelup telur dan digoreng garing. 1 box 25 pcs (Pilihan : Kentang / Ayam / Daging )", price: "RM 30.00 / RM 35.00 / RM 40.00 ", img: "Tauhubergedil.png" },

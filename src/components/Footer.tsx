@@ -8,7 +8,7 @@ export default function Footer() {
           
           <div className="col-span-1 md:col-span-1">
             <a href="#" className="text-2xl font-semibold tracking-tighter text-white uppercase flex items-center gap-2 mb-6">
-              <img src="/logo.png" alt="PaiNai Delights Logo" className="w-10 h-10 object-contain" />
+              <img src="logo.png" alt="PaiNai Delights Logo" className="w-10 h-10 object-contain" />
               PaiNai Delights
             </a>
             <p className="text-xs font-light leading-relaxed mb-6 max-w-xs text-white/50">

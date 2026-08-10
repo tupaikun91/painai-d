@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-[#2A1116] overflow-hidden pt-20">
       <div className="absolute inset-0 w-full h-full">
         <img 
-          src="/hero-cake.png" 
+          src="hero-cake.png" 
           alt="Strawberry Cake Background" 
           className="absolute inset-0 w-full h-full object-cover opacity-40 mix-blend-overlay transform scale-105" 
           style={{ filter: 'contrast(1.2) brightness(0.8)' }}
@@ -16,11 +16,11 @@ export default function Hero() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#E11D48]/15 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        <img src="/logo.png" alt="Logo" className="absolute left-[10%] animate-float-1 w-16 h-auto opacity-0 drop-shadow-lg" />
-        <img src="/logo.png" alt="Logo" className="absolute left-[30%] animate-float-2 w-12 h-auto opacity-0 drop-shadow-lg" />
-        <img src="/logo.png" alt="Logo" className="absolute left-[50%] animate-float-3 w-20 h-auto opacity-0 filter blur-[1px] drop-shadow-lg" />
-        <img src="/logo.png" alt="Logo" className="absolute left-[70%] animate-float-4 w-14 h-auto opacity-0 drop-shadow-lg" />
-        <img src="/logo.png" alt="Logo" className="absolute left-[90%] animate-float-5 w-10 h-auto opacity-0 filter blur-[2px] drop-shadow-lg" />
+        <img src="logo.png" alt="Logo" className="absolute left-[10%] animate-float-1 w-16 h-auto opacity-0 drop-shadow-lg" />
+        <img src="logo.png" alt="Logo" className="absolute left-[30%] animate-float-2 w-12 h-auto opacity-0 drop-shadow-lg" />
+        <img src="logo.png" alt="Logo" className="absolute left-[50%] animate-float-3 w-20 h-auto opacity-0 filter blur-[1px] drop-shadow-lg" />
+        <img src="logo.png" alt="Logo" className="absolute left-[70%] animate-float-4 w-14 h-auto opacity-0 drop-shadow-lg" />
+        <img src="logo.png" alt="Logo" className="absolute left-[90%] animate-float-5 w-10 h-auto opacity-0 filter blur-[2px] drop-shadow-lg" />
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-6 w-full flex flex-col items-center justify-center text-center">
