@@ -2,16 +2,16 @@ import { useRef, useEffect } from 'react';
 
 export default function Gallery() {
   const images = [
-    "Collection1.png",
-    "Collection2.png",
-    "Collection3.png",
+    "Collection1.jpg",
+    "Collection2.jpg",
+    "Collection3.jpg",
     "Collection4.jpg",
-    "Collection5.png",
-    "Collection6.png",
-    "Collection7.png",
-    "Collection8.png",
-    "Collection9.png",
-    "C10.png",
+    "Collection5.jpg",
+    "Collection6.jpg",
+    "Collection7.jpg",
+    "Collection8.jpg",
+    "Collection9.jpg",
+    "C10.jpg",
     "C11.jpg",
     
   ];
@@ -109,7 +109,7 @@ export default function Gallery() {
       >
         {extendedImages.map((src, idx) => (
           <div key={idx} className="shrink-0 w-[85vw] md:w-[45vw] lg:w-[35vw] h-[350px] md:h-[450px] relative rounded-3xl overflow-hidden group shadow-[0_8px_30px_rgb(63,29,36,0.04)] pointer-events-none border border-[#3F1D24]/5">
-            <img src={src} alt="Gallery image" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 pointer-events-none" />
+            <img src={`${import.meta.env.BASE_URL}${src}`} alt="Gallery image" className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 pointer-events-none" />
             <div className="absolute inset-0 bg-[#2A1116]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
           </div>
         ))}

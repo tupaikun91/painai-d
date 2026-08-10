@@ -5,7 +5,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative h-[550px] rounded-3xl overflow-hidden shadow-2xl group">
             <img 
-              src="Ourstory.jpg" 
+              src={`${import.meta.env.BASE_URL}Ourstory.jpg`} 
               alt="Baking fresh cakes" 
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
             />

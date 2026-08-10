@@ -10,7 +10,7 @@ export default function DessertTable() {
           <div className="relative order-2 lg:order-1">
             <div className="aspect-[4/5] rounded-[2rem] overflow-hidden relative">
               <img 
-                src="DessertTable.png" 
+                src={`${import.meta.env.BASE_URL}DessertTable.jpg`} 
                 alt="Dessert Table Setup" 
                 className="w-full h-full object-cover"
               />
@@ -35,7 +35,7 @@ export default function DessertTable() {
                 </svg>
               </div>
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center z-10 overflow-hidden shadow-inner">
-                <img src="logo.png" alt="Logo" className="w-full h-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>

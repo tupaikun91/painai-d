@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full z-50 bg-[#FFF9F9]/80 backdrop-blur-lg border-b border-[#3F1D24]/10 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#" className="text-xl font-semibold tracking-tighter text-[#3F1D24] uppercase flex items-center gap-2">
-          <img src="logo.png" alt="PaiNai Delights Logo" className="w-8 h-8 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="PaiNai Delights Logo" className="w-8 h-8 object-contain" />
           PaiNai Delights
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-[#3F1D24]/70">
